@@ -8,21 +8,23 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-agdasima: var(--font-agdasima);
+  --font-inter: var(--font-inter);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-gradient-from: theme(colors.blue.600);
+  --color-gradient-to: theme(colors.purple.600);
+
+  --color-surface-darker: #101828;
+  --color-surface-dark: #1e2939;
+  --color-light: #d1d5dc;
+  --color-primary: white;
+  --color-secondary: color-mix(in srgb, white 80%, black 20%);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 /* Custom animations */
@@ -120,4 +122,14 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  font-family: Agdasima, sans-serif;
 }
