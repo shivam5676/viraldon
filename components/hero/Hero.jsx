@@ -5,6 +5,7 @@ import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import GradientButton from "@/app/ui/GradientButton";
 
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
@@ -135,11 +136,12 @@ export default function Hero() {
             ref={buttonRef}
             className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in"
           >
-            <Link
-              href="#contact"
-              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 hover:from-blue-700 hover:to-purple-700"
-            >
-              Get Started
+            <Link href="#contact">
+              <GradientButton
+                className={"transform hover:-translate-y-2 px-8 py-4"}
+              >
+                Get Started
+              </GradientButton>
             </Link>
             <Link
               href="#services"
