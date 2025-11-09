@@ -11,6 +11,8 @@ export default function AboutClient() {
   const imageRef = useRef(null);
   const contentRef = useRef(null);
   const statsRef = useRef(null);
+  const titleRef = useRef(null);
+  const subtitleRef = useRef(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -122,16 +124,17 @@ export default function AboutClient() {
             ref={contentRef}
             className="lg:w-1/2"
           >
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8">
-              About <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">ViralDon</span>
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              At ViralDon, we believe in the power of digital transformation. Our team of experts combines 
-              creativity with technical excellence to deliver solutions that drive real business growth.
-            </p>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-              With years of experience in digital marketing, web development, and software engineering, 
-              we've helped hundreds of businesses establish a strong online presence and achieve their goals.
+            <h1 
+              ref={titleRef}
+              className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6"
+            >
+              About <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">MarketGang</span>
+            </h1>
+            <p 
+              ref={subtitleRef}
+              className="text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl"
+            >
+              At MarketGang, we believe in the power of digital transformation. Our team of experts combines creativity, technology, and strategic thinking to deliver exceptional results for our clients.
             </p>
             
             <div className="mb-10">
