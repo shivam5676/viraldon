@@ -55,21 +55,21 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Link
-              href="/"
-              className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
-            >
-              <h3>ViralDon</h3>
+            <Link href="/" className="flex items-center">
+              <img
+                src="/logo/marketGangLogo.png"
+                alt="Market Gang Logo"
+                width={150}
+              />
             </Link>
           </div>
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6 lg:space-x-12">
             {navLinks.map((link, index) => (
               <Link
                 key={index}
                 href={link.href}
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium relative group text-lg"
+                className="text-light hover:text-gradient-from transition-colors relative group text-lg"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transition-all duration-300 group-hover:w-full"></span>

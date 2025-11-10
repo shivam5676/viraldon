@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -12,9 +13,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-3xl font-bold bg-gradient-to-r from-gradient-from to-gradient-to bg-clip-text text-transparent mb-6">
-              ViralDon
-            </h3>
+            <div className="my-3">
+              <img
+                src="/logo/marketGangLogo.png"
+                alt="Market Gang Logo"
+                width={150}
+              />
+            </div>
             <p className="text-light mb-8 max-w-md text-lg">
               Empowering businesses with innovative digital solutions for
               sustainable growth in the modern marketplace.
@@ -25,7 +30,7 @@ export default function Footer() {
                   <a
                     key={social}
                     href="#"
-                    className="text-surface-dark p-4 rounded-full hover:bg-gradient-from transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+                    className="text-light p-4 rounded-full hover:bg-gradient-from transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
                     aria-label={social}
                   >
                     <div className="w-6 h-6 bg-light rounded-full"></div>

@@ -138,7 +138,9 @@ export default function Hero() {
           >
             <Link href="#contact">
               <GradientButton
-                className={"transform hover:-translate-y-2 px-8 py-4"}
+                className={
+                  "transform hover:-translate-y-2 px-8 py-4 w-full md:w-auto"
+                }
               >
                 Get Started
               </GradientButton>

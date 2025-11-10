@@ -24,6 +24,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  overflow-x: hidden;
   font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
@@ -132,4 +133,9 @@ h5,
 h6,
 .heading {
   font-family: Agdasima, sans-serif;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 0.5;
 }
