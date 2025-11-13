@@ -129,7 +129,7 @@ export default function Contact() {
             ref={titleRef}
             className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
           >
-            Get In{" "}
+            Get In
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Touch
             </span>
